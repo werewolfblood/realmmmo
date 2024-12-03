@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "realmmomod:block/mithril_log_top",
+    "side": "realmmomod:block/mithril_log"
+  }
+}

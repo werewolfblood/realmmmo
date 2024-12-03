@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "realmmmomod",
+	"version": "${version}",
+	"name": "Realmmmo Mod",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/realmmmo-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"dev.west.realmmomod.RealmmmoMod"
+		],
+		"client": [
+			"dev.west.realmmomod.RealmmmoModClient"
+		],
+		"fabric-datagen": [
+			"dev.west.realmmomod.RealmmmoModDataGenerator"
+		]
+	},
+	"mixins": [
+		"realmmmo-mod.mixins.json",
+		{
+			"config": "realmmmo-mod.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
